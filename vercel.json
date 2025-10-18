@@ -1,5 +1,12 @@
 {
+  "version": 2,
   "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/roms/(.*)",
+      "dest": "/roms/$1"
+    }
+  ]
 }
